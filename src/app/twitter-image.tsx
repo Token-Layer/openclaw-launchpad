@@ -22,7 +22,7 @@ const bnbIcon = `data:image/svg+xml,${encodeURIComponent(`<svg width="96" height
 export default async function Image() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
     || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null)
-    || "http://localhost:3001";
+    || (process.env.VERCEL ? "https://www.boilingpoint.ai" : "http://localhost:3001");
 
   // Fetch fonts from public folder
   const [clashDisplayBold, satoshiMedium] = await Promise.all([
