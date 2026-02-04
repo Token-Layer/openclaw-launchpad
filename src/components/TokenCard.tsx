@@ -35,7 +35,7 @@ function ChainIcon({ chain, isRegistered = true }: { chain: string; isRegistered
         alt={chain}
         width={16}
         height={16}
-        className={`rounded-sm ${!isRegistered ? "opacity-40 grayscale" : ""}`}
+        className={`w-4 h-4 rounded-sm ${!isRegistered ? "opacity-40 grayscale" : ""}`}
       />
     );
   }
