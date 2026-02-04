@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { Token } from "@/types/token";
 
-const API_BASE_URL = "http://127.0.0.1:54321/functions/v1";
+const API_BASE_URL =
+  process.env.TOKEN_LAYER_API_URL || "https://api.tokenlayer.network/functions/v1";
 
 interface GetTokensV2Response {
   success: boolean;
