@@ -22,20 +22,11 @@ export const metadata: Metadata = {
     siteName: "The Boiling Point",
     title: "The Boiling Point | OpenClaw Agent Launchpad",
     description: "Launch OpenClaw agents on Base for free and trade instantly on Solana, Ethereum, and BNB. The hottest spot for AI agent tokens.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "The Boiling Point - OpenClaw Agent Launchpad",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Boiling Point | OpenClaw Agent Launchpad",
     description: "Launch OpenClaw agents on Base for free and trade instantly on Solana, Ethereum, and BNB. The hottest spot for AI agent tokens.",
-    images: ["/og-image.png"],
     creator: "@steipete",
   },
   robots: {
