@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { Token } from "@/types/token";
 
+// Disable caching for this route
+export const dynamic = "force-dynamic";
+
 const API_BASE_URL =
   process.env.TOKEN_LAYER_API_URL || "https://api.tokenlayer.network/functions/v1";
 
@@ -33,7 +36,7 @@ export async function GET() {
       method: "POST",
       headers,
       body: JSON.stringify({
-        token_layer_id: tokenLayerId,
+        keyword: tokenLayerId,
       }),
     });
 
